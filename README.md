@@ -13,7 +13,7 @@ Na engenharia estrutural, um problema é chamado de não-linear quando a rigidez
 
  A metodologia empregada considera um sistema de três graus de liberdade e utiliza um método iterativo para a resolução das equações de equilíbrio. Realizando a simulação em Python, utilizando as bibliotecas `numpy` para operações númericas e `plotly` para a visualização dos resultados. A formulação do problema baseia-se na discretização de uma barra com três pontos de deslocamento `(\( u_1, u_2, u_3 \)`. A matriz de rigidez do sistema é definida em função dos deslocamentos, do módulo de elasticidade inicial `\( E_0 \)`, da área da seção transversal `\( S \)` e do comprimento da barra `\( L \)`, conforme apresentado pela função abaixo:
 
-    ```ruby
+```ruby
  def calcular_matriz_rigidez(u1, u2, u3, E0, S, L, n):
     factor = (2 * E0 * S) / L
     term = n * 2 / L
