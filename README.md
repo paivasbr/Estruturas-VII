@@ -54,7 +54,7 @@ fig.show()
 ```
 O gráfico obtido demonstra um crescimento quase linear do deslocamento em relação à carga, seguido por uma região onde a não linearidade se torna mais evidente. Como resultado, a carga dsitribuída máxima suportada pela estrutura antes de ultrapassar o limite de deslocamento de 1,0 m foi de aproximadamente 1,63 N/m.
 
-<img src="Gráfico Gerado.png" width="500" height="400">
+[Gráfico Gerado.png](https://github.com/paivasbr/Unicamp/blob/aa2e796e311cd7e0f259f872b6845fe53c8d147d/T%C3%B3picos%20em%20Engenharia%20de%20Estruturas%20VII/Gr%C3%A1fico%20Gerado.png)
 
 Além disso, observa-se que o critério de convergência foi atendido. No entanto, em alguns determinados pontos, o número máximo de iterações foi alcançado antes da convergência, indicando a necessidade de um refinamento na malha ou na solução.
 
@@ -66,6 +66,7 @@ O referido projeto demonstrou a aplicabilidade da análise não linear na determ
 
 ```ruby
 Fuina, J. S. METODOS DE CONTROLE DE DEFORMA ̧COES PARA ANALISE NAO-LINEAR DE ESTRUTURAS. Disponível em: <https://repositorio.ufmg.br/bitstream/1843/LMCA-769HM7/1/153.pdf>. Acesso em: 3 abr. 2025.
-
+```
+```ruby
 Figueiredo, R.; Serafini, M. Análise Não Linear de Estruturas. São Paulo: Editora Engenharia, 2020.
 ```
