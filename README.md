@@ -6,12 +6,11 @@
 
 ### **_Introdução_**
 
-Na engenharia estrutural, um problema é chamado de não-linear quando a rigidez da estrutura muda conforme ela se deforma. Em outras palavras, a resistência da estrutura à deformação não é constante e varia com o deslocamento (Fuina, 2025). Sendo assim, para o desenvolvimento deste estudo implementamos um modelo numérico para avaliação da resposta estrutural de uma barra submetida a um carregamento distribuído crescente. Tendo como objetivo determinar a carga distribuída máxima suportada pela estrutura antes que o deslocamento ultrapasse um valor admissível.
+<p align="justify"> Na engenharia estrutural, um problema é chamado de não-linear quando a rigidez da estrutura muda conforme ela se deforma. Em outras palavras, a resistência da estrutura à deformação não é constante e varia com o deslocamento (Fuina, 2025). Sendo assim, para o desenvolvimento deste estudo implementamos um modelo numérico para avaliação da resposta estrutural de uma barra submetida a um carregamento distribuído crescente. Tendo como objetivo determinar a carga distribuída máxima suportada pela estrutura antes que o deslocamento ultrapasse um valor admissível.</p>
 
 ### **_Metodologia_**
 
-
- A metodologia empregada considera um sistema de três graus de liberdade e utiliza um método iterativo para a resolução das equações de equilíbrio. Realizando a simulação em Python, utilizando as bibliotecas `numpy` para operações númericas e `plotly` para a visualização dos resultados. A formulação do problema baseia-se na discretização de uma barra com três pontos de deslocamento `(\( u_1, u_2, u_3 \)`. A matriz de rigidez do sistema é definida em função dos deslocamentos, do módulo de elasticidade inicial `\( E_0 \)`, da área da seção transversal `\( S \)` e do comprimento da barra `\( L \)`, conforme apresentado pela função abaixo:
+ <p align="justify"> A metodologia empregada considera um sistema de três graus de liberdade e utiliza um método iterativo para a resolução das equações de equilíbrio. Realizando a simulação em Python, utilizando as bibliotecas `numpy` para operações númericas e `plotly` para a visualização dos resultados. A formulação do problema baseia-se na discretização de uma barra com três pontos de deslocamento `(\( u_1, u_2, u_3 \)`. A matriz de rigidez do sistema é definida em função dos deslocamentos, do módulo de elasticidade inicial `\( E_0 \)`, da área da seção transversal `\( S \)` e do comprimento da barra `\( L \)`, conforme apresentado pela função abaixo:</p>
 
 ```ruby
  def calcular_matriz_rigidez(u1, u2, u3, E0, S, L, n):
@@ -23,11 +22,11 @@ Na engenharia estrutural, um problema é chamado de não-linear quando a rigidez
         [0, -1 + term * (u3 - u2), 1 - term * (u3 - u2)]
     ])
 ```
-O código principal executa a simulação variando a carga distribuída _*(q)*_ até que o deslocamento máximo eprmitido seja atingido. Os dados são armazenados durante o processo, para posteriormente análise gráfica.
+<p align="justify"> O código principal executa a simulação variando a carga distribuída _*(q)*_ até que o deslocamento máximo eprmitido seja atingido. Os dados são armazenados durante o processo, para posteriormente análise gráfica.</p>
 
 ### **_Resultados e Discussões_**
 
-Os resultados obtidos foram plotados utilizando a biblioteca `plotly`. Gerando um gráfico que representa a relação entre a carga distribuída _*q*_ e o deslocamento máximo _*u3*_, permitindo identificar o ponto em que a esrtutura atinge sua capacidade limite.
+<p align="justify"> Os resultados obtidos foram plotados utilizando a biblioteca `plotly`. Gerando um gráfico que representa a relação entre a carga distribuída _*q*_ e o deslocamento máximo _*u3*_, permitindo identificar o ponto em que a esrtutura atinge sua capacidade limite.</p>
 
 ```ruby
 fig = go.Figure()
@@ -52,15 +51,15 @@ fig.update_layout(
 )
 fig.show()
 ```
-O gráfico obtido demonstra um crescimento quase linear do deslocamento em relação à carga, seguido por uma região onde a não linearidade se torna mais evidente. Como resultado, a carga dsitribuída máxima suportada pela estrutura antes de ultrapassar o limite de deslocamento de 1,0 m foi de aproximadamente 1,63 N/m.
+<p align="justify"> O gráfico obtido demonstra um crescimento quase linear do deslocamento em relação à carga, seguido por uma região onde a não linearidade se torna mais evidente. Como resultado, a carga dsitribuída máxima suportada pela estrutura antes de ultrapassar o limite de deslocamento de 1,0 m foi de aproximadamente 1,63 N/m.</p>
 
-<div align="left"><img src="Tópicos em Engenharia de Estruturas VII/Gráfico Gerado.png" width="400px", height="400px"></div>
+<div align="left"><img src="Tópicos em Engenharia de Estruturas VII/Gráfico Gerado.png" width="400px", height="350px"></div>
 
-Além disso, observa-se que o critério de convergência foi atendido. No entanto, em alguns determinados pontos, o número máximo de iterações foi alcançado antes da convergência, indicando a necessidade de um refinamento na malha ou na solução.
+<p align="justify"> Além disso, observa-se que o critério de convergência foi atendido. No entanto, em alguns determinados pontos, o número máximo de iterações foi alcançado antes da convergência, indicando a necessidade de um refinamento na malha ou na solução.</p>
 
 ### **_Conclusão_**
 
-O referido projeto demonstrou a aplicabilidade da análise não linear na determinação da capacidade de carga de uma estrutura simples, tal como, a de uma em forma de barra. O uso de um método iterativo permitiu uma resolução diversificada e eficiente, fornecendo dados precisos do deslocamento em função da carga aplicada. A implementação das bibliotecas em Python, demonstrou a eficácia e agilidade da aplicabilidade destas ferramentas na resolução numérica e visualização de resultados complexos. Por fim, a abordagem adotada se alinha às metodologias descritas pelos autores Figueiredo e Serafini (2020), reforçando a importância das técnicas numéricas na engenharia estrutural.
+<p align="justify"> O referido projeto demonstrou a aplicabilidade da análise não linear na determinação da capacidade de carga de uma estrutura simples, tal como, a de uma em forma de barra. O uso de um método iterativo permitiu uma resolução diversificada e eficiente, fornecendo dados precisos do deslocamento em função da carga aplicada. A implementação das bibliotecas em Python, demonstrou a eficácia e agilidade da aplicabilidade destas ferramentas na resolução numérica e visualização de resultados complexos. Por fim, a abordagem adotada se alinha às metodologias descritas pelos autores Figueiredo e Serafini (2020), reforçando a importância das técnicas numéricas na engenharia estrutural.</p>
 
 ### **_Referência_**
 
