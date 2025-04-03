@@ -54,7 +54,7 @@ fig.show()
 ```
 O gráfico obtido demonstra um crescimento quase linear do deslocamento em relação à carga, seguido por uma região onde a não linearidade se torna mais evidente. Como resultado, a carga dsitribuída máxima suportada pela estrutura antes de ultrapassar o limite de deslocamento de 1,0 m foi de aproximadamente 1,63 N/m.
 
-<div align="left"><img src="Tópicos em Engenharia de Estruturas VII/Gráfico Gerado.png" width="450px", height="465px"></div>
+<div align="left"><img src="Tópicos em Engenharia de Estruturas VII/Gráfico Gerado.png" width="400px", height="400px"></div>
 
 Além disso, observa-se que o critério de convergência foi atendido. No entanto, em alguns determinados pontos, o número máximo de iterações foi alcançado antes da convergência, indicando a necessidade de um refinamento na malha ou na solução.
 
