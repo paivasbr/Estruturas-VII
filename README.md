@@ -10,7 +10,7 @@
 
 ### **_Metodologia_**
 
- <p align="justify"> A metodologia empregada considera um sistema de três graus de liberdade e utiliza um método iterativo para a resolução das equações de equilíbrio. Realizando a simulação em Python, utilizando as bibliotecas</p> `numpy` para operações númericas e `plotly` <p align="justify">para a visualização dos resultados. A formulação do problema baseia-se na discretização de uma barra com três pontos de deslocamento</p> `(\( u_1, u_2, u_3 \)`. <p align="justify">A matriz de rigidez do sistema é definida em função dos deslocamentos, do módulo de elasticidade inicial</p> `\( E_0 \)`, da área da seção transversal `\( S \)` e do comprimento da barra `\( L \)`<p align="justify">, conforme apresentado pela função abaixo:</p>
+ <p align="justify"> A metodologia empregada considera um sistema de três graus de liberdade e utiliza um método iterativo para a resolução das equações de equilíbrio. Realizando a simulação em Python, utilizando as bibliotecas _numpy_ para operações númericas e plotly para a visualização dos resultados. A formulação do problema baseia-se na discretização de uma barra com três pontos de deslocamento (\( u_1, u_2, u_3 \). A matriz de rigidez do sistema é definida em função dos deslocamentos, do módulo de elasticidade inicial `\( E_0 \)`, da área da seção transversal `\( S \)` e do comprimento da barra `\( L \)`, conforme apresentado pela função abaixo:</p>
 
 ```ruby
  def calcular_matriz_rigidez(u1, u2, u3, E0, S, L, n):
@@ -53,7 +53,7 @@ fig.show()
 ```
 <p align="justify"> O gráfico obtido demonstra um crescimento quase linear do deslocamento em relação à carga, seguido por uma região onde a não linearidade se torna mais evidente. Como resultado, a carga dsitribuída máxima suportada pela estrutura antes de ultrapassar o limite de deslocamento de 1,0 m foi de aproximadamente 1,63 N/m.</p>
 
-<p align="justify"><div align="left"><img src="Tópicos em Engenharia de Estruturas VII/Gráfico Gerado.png" width="400px", height="350px"></div></p>
+<div align="left"><img src="Tópicos em Engenharia de Estruturas VII/Gráfico Gerado.png" width="400px", height="350px"></div>
 
 <p align="justify"> Além disso, observa-se que o critério de convergência foi atendido. No entanto, em alguns determinados pontos, o número máximo de iterações foi alcançado antes da convergência, indicando a necessidade de um refinamento na malha ou na solução.</p>
 
