@@ -6,7 +6,7 @@
 
 ### **_Introdução_**
 
-<p align="justify"> Na engenharia estrutural, um problema é chamado de não-linear quando a rigidez da estrutura muda conforme ela se deforma. Em outras palavras, a resistência da estrutura à deformação não é constante e varia com o deslocamento (Fuina, 2025). Sendo assim, para o desenvolvimento deste estudo implementamos um modelo numérico para avaliação da resposta estrutural de uma barra submetida a um carregamento distribuído crescente. Tendo como objetivo determinar a carga distribuída máxima suportada pela estrutura antes que o deslocamento ultrapasse um valor admissível.</p>
+<p align="justify"> Na engenharia estrutural, um problema é chamado de não-linear quando a rigidez da estrutura muda conforme ela se deforma. Em outras palavras, a resistência da estrutura à deformação não é constante e varia com o deslocamento (Fuina, 2025). Segundo Beer et al. (2017), a determinação do carregamento distribuído máximo que uma estrutura pode suportar envolve a consideração de fatores como tensão admissível, deformações e condições de contorno. Além disso, Gere e Goodno (2020) destacam a importância da análise de resistência dos materiais para prever o comportamento estrutural sob diferentes tipos de carregamento. Sendo assim, para o desenvolvimento deste estudo implementamos um modelo numérico para avaliação da resposta estrutural de uma barra submetida a um carregamento distribuído márixo (qmax) que uma barra pode suportar. Buscando como objetivo determinar a carga distribuída máxima suportada pela estrutura antes que o deslocamento ultrapasse um valor admissível.</p>
 
 ### **_Metodologia_**
 
@@ -64,8 +64,14 @@ fig.show()
 ### **_Referência_**
 
 ```ruby
+Beer, F. P.; Johnston, E. R.; Dewolf, J. T.; Mazurek, D. F. Resistência dos Materiais. 7. ed. McGraw-Hill, 2017
+```
+```ruby
 Fuina, J. S. METODOS DE CONTROLE DE DEFORMA ̧COES PARA ANALISE NAO-LINEAR DE ESTRUTURAS. Disponível em: <https://repositorio.ufmg.br/bitstream/1843/LMCA-769HM7/1/153.pdf>. Acesso em: 3 abr. 2025.
 ```
 ```ruby
 Figueiredo, R.; Serafini, M. Análise Não Linear de Estruturas. São Paulo: Editora Engenharia, 2020.
+```
+```ruby
+Gere, J. M.; Goodno, B. J. Mecânica dos Materiais. 9. ed. Cengage Learning, 2020.
 ```
