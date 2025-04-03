@@ -67,10 +67,10 @@ fig.show()
 Beer, F. P.; Johnston, E. R.; Dewolf, J. T.; Mazurek, D. F. Resistência dos Materiais. 7. ed. McGraw-Hill, 2017
 ```
 ```ruby
-Fuina, J. S. METODOS DE CONTROLE DE DEFORMA ̧COES PARA ANALISE NAO-LINEAR DE ESTRUTURAS. Disponível em: <https://repositorio.ufmg.br/bitstream/1843/LMCA-769HM7/1/153.pdf>. Acesso em: 3 abr. 2025.
+Figueiredo, R.; Serafini, M. Análise Não Linear de Estruturas. São Paulo: Editora Engenharia, 2020.
 ```
 ```ruby
-Figueiredo, R.; Serafini, M. Análise Não Linear de Estruturas. São Paulo: Editora Engenharia, 2020.
+Fuina, J. S. METODOS DE CONTROLE DE DEFORMA ̧COES PARA ANALISE NAO-LINEAR DE ESTRUTURAS. Disponível em: <https://repositorio.ufmg.br/bitstream/1843/LMCA-769HM7/1/153.pdf>. Acesso em: 3 abr. 2025.
 ```
 ```ruby
 Gere, J. M.; Goodno, B. J. Mecânica dos Materiais. 9. ed. Cengage Learning, 2020.
