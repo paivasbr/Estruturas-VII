@@ -1,4 +1,4 @@
-<h3 align="center">_Análise não Linear Física de uma Estrutura em Forma de Barra_**</h3>
+<h3 align="center"> Análise não Linear Física de uma Estrutura em Forma de Barra </h3>
 
 - **_Aluna:_** Brenda dos Santos Paiva
 
