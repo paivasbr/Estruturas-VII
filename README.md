@@ -21,8 +21,8 @@ Na engenharia estrutural, um problema é chamado de não-linear quando a rigidez
         [1, 0, 0],
         [0, 2 - term * (u3 - u1), -1 + term * (u3 - u2)],
         [0, -1 + term * (u3 - u2), 1 - term * (u3 - u2)]
-    ])
-    ```
+    ]) ```
+    
  O código principal executa a simulação variando a carga distribuída _*(q)*_ até que o deslocamento máximo eprmitido seja atingido. Os dados são armazenados durante o processo, para posteriormente análise gráfica.
 
 ### **_Resultados e Discussões_**
