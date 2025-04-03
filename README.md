@@ -23,3 +23,12 @@ Na engenharia estrutural, um problema é chamado de não-linear quando a rigidez
         [0, -1 + term * (u3 - u2), 1 - term * (u3 - u2)]
     ])
     ```
+ O código principal executa a simulação variando a carga distribuída _*(q)*_ até que o deslocamento máximo eprmitido seja atingido. Os dados são armazenados durante o processo, para posteriormente análise gráfica.
+
+### **_Resultados e Discussões_**
+
+### **_Conclusão_**
+
+### **_Referência_**
+
+Fuina, J. S. METODOS DE CONTROLE DE DEFORMA ̧COES PARA ANALISE NAO-LINEAR DE ESTRUTURAS. Disponível em: <https://repositorio.ufmg.br/bitstream/1843/LMCA-769HM7/1/153.pdf>. Acesso em: 3 abr. 2025.
