@@ -10,7 +10,7 @@
 
 ### **_Metodologia_**
 
- <p align="justify"> A metodologia empregada considera um sistema de três graus de liberdade e utiliza um método iterativo para a resolução das equações de equilíbrio. Realizando a simulação em Python, utilizando as bibliotecas _numpy_ para operações númericas e plotly para a visualização dos resultados. A formulação do problema baseia-se na discretização de uma barra com três pontos de deslocamento (\( u_1, u_2, u_3 \). A matriz de rigidez do sistema é definida em função dos deslocamentos, do módulo de elasticidade inicial `\( E_0 \)`, da área da seção transversal `\( S \)` e do comprimento da barra `\( L \)`, conforme apresentado pela função abaixo:</p>
+ <p align="justify"> A metodologia empregada considera um sistema de três graus de liberdade e utiliza um método iterativo para a resolução das equações de equilíbrio. Realizando a simulação em Python, utilizando as bibliotecas numpy para operações númericas e plotly para a visualização dos resultados. A formulação do problema baseia-se na discretização de uma barra com três pontos de deslocamento (u_1, u_2, u_3). A matriz de rigidez do sistema é definida em função dos deslocamentos, do módulo de elasticidade inicial (E_0), da área da seção transversal (S) e do comprimento da barra (L), conforme apresentado pela função abaixo:</p>
 
 ```ruby
  def calcular_matriz_rigidez(u1, u2, u3, E0, S, L, n):
@@ -22,11 +22,11 @@
         [0, -1 + term * (u3 - u2), 1 - term * (u3 - u2)]
     ])
 ```
-<p align="justify"> O código principal executa a simulação variando a carga distribuída _*(q)*_ até que o deslocamento máximo eprmitido seja atingido. Os dados são armazenados durante o processo, para posteriormente análise gráfica.</p>
+<p align="justify"> O código principal executa a simulação variando a carga distribuída (q) até que o deslocamento máximo eprmitido seja atingido. Os dados são armazenados durante o processo, para posteriormente análise gráfica.</p>
 
 ### **_Resultados e Discussões_**
 
-<p align="justify"> Os resultados obtidos foram plotados utilizando a biblioteca `plotly`. Gerando um gráfico que representa a relação entre a carga distribuída _*q*_ e o deslocamento máximo _*u3*_, permitindo identificar o ponto em que a esrtutura atinge sua capacidade limite.</p>
+<p align="justify"> Os resultados obtidos foram plotados utilizando a biblioteca plotly. Gerando um gráfico que representa a relação entre a carga distribuída q e o deslocamento máximo u3, permitindo identificar o ponto em que a esrtutura atinge sua capacidade limite.</p>
 
 ```ruby
 fig = go.Figure()
