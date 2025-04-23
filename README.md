@@ -1,7 +1,5 @@
 ## <h3 align="center"> Análise não Linear Física de uma Estrutura em Forma de Barra </h3>
 
-- **_Aluna:_** Brenda dos Santos Paiva
-
 **_Disciplina:_** Tópicos em Engenharia de Estruturas VII - Introdução à Análise Não Linear de Estruturas.
 
 ### **_Introdução_**
